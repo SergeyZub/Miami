@@ -3,9 +3,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 button {
@@ -16,4 +19,10 @@ button {
 input,
 textarea {
   outline: none;
+}
+
+.page {
+  &--active {
+    overflow: hidden;
+  }
 }
